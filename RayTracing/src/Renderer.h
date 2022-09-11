@@ -13,7 +13,9 @@ public:
 	void Render();
 	
 	std::shared_ptr<Walnut::Image> GetFinalImage() { return m_outputImage; }
-	uint32_t PerPixel(glm::vec2 texcord);
+	glm::vec4 PerPixel(glm::vec2 texcord);
+
+	float aspectRatio = 1.0f;
 
 private:
 	
